@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply some basic styles to the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        
+        /* Style the main container div */
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        /* Style the result section */
+        .result-heading {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Style the "result" text */
+        .result-text {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        /* Style the "test" text */
+        .test-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #888;
+        }
+        
+        /* Style the "score" text */
+        .score-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        /* Style the remaining divs */
+        .bar {
+            height: 10px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result-heading">Depression Test Result</div>
+        <div class="result-text">Result</div>
+        <div class="test-text">Test</div>
+        <div class="score-text">Score: {{marks}}/{{total}}</div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>

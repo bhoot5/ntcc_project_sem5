@@ -1,0 +1,121 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 22px;
+    padding-right: 27px;
+    padding-bottom: 22px;
+    padding-left: 27px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-2 {
+    display: flex;
+    max-width: 585px;
+    height: 77px;
+    width: 585px;
+    background-color: rgba(217, 217, 217, 1);
+  }
+  .div-3 {
+    display: flex;
+    max-width: 402px;
+    height: 82px;
+    width: 402px;
+    margin-top: 56px;
+    background-color: rgba(217, 217, 217, 1);
+  }
+  .div-4 {
+    /* display: flex; */
+    /* max-width: 1359px; */
+    height: 700px;
+    width: 1359px;
+    margin-top: 56px;
+    background-color: rgba(217, 217, 217, 1);
+  }
+  .div-5 {
+    max-width: 127px;
+    margin-top: 56px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .div-6 {
+    display: flex;
+    /* max-width: 176px; */
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .div-7 {
+    display: flex;
+    max-width: 467px;
+    height: 647px;
+    width: 467px;
+    margin-top: 56px;
+    background-color: rgba(215, 195, 144, 1);
+  }
+  .div-8 {
+    max-width: 99px;
+    margin-top: 56px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  .about-you-age-range-household {
+    max-width: 169px;
+    margin-top: 56px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .div-9 {
+    max-width: 68px;
+    margin-top: 56px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .div-10 {
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    background-color: rgba(94, 91, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+  }
+  .btn-primary,.btn-primary:visited {
+        margin-right: 5px;
+        margin-left: 5px;
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        background-color: rgba(94, 91, 255, 1)!important;
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+        font-family: "Inter", sans-serif;
+    }
+    .btn-primary:active,.btn-primary:focus,.btn-primary:hover{
+        background-color: orange !important;
+        border-color:  orange !important;
+    
+  }
+  

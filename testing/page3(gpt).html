@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            height:900px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>About You</h2>
+    <form action="{% url 'page2'%}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <label for="name">Have you ever received treatment for a mental health problem?</label>
+          <button class="btn btn-primary">Yes</button>
+          <button class="btn btn-primary">No</button>
+        </div>
+        <div class="form-group">
+          <label for="name">Do you currently have health insurance?</label>
+          <button class="btn btn-primary">Yes</button>
+          <button class="btn btn-primary">No</button>
+        </div>
+        <div class="form-group">
+            <label for="age-range">Age Range:</label>
+            <select id="age-range" name="age-range">
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65+">65+</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="household-income">Household Income:</label>
+            <select id="household-income" name="household-income">
+                <option value="less-than-25k">Less than $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-75k">$50,000 - $75,000</option>
+                <option value="75k-100k">$75,000 - $100,000</option>
+                <option value="over-100k">Over $100,000</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="job-description">Job Description:</label>
+            <div class="radio-group">
+                <input type="radio" id="student" name="job-description" value="student">
+                <label for="student">Student</label>
+                <input type="radio" id="private-sector" name="job-description" value="private-sector">
+                <label for="private-sector">Private Sector</label>
+                <input type="radio" id="public-sector" name="job-description" value="public-sector">
+                <label for="public-sector">Public Sector</label>
+                <input type="radio" id="unemployed" name="job-description" value="unemployed">
+                <label for="unemployed">Unemployed</label>
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+    </form>
+</div>
+</body>
+</html>

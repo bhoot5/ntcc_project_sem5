@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .option-label {
+            padding: 10px;
+            background-color: #d9d9d9;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .option-input {
+            display: none;
+        }
+
+        .option-input:checked + .option-label {
+            background-color: #20b8be;
+            color: #fff;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #20b8be;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #1a8c91;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Depression Test</h2>
+        <form action="/web2/page3" method="post">
+            <input type="hidden" name="csrfmiddlewaretoken" value="BBjd0y6blR8kzMap3pdTbDfXByzhzC4Q3ooAJvukgvnKiLneO8AKZyOYn42XWKuy">
+
+            <div class="question">
+                1. Little interest or pleasure in doing things
+            </div>
+            <div class="options">
+                <input type="radio" id="q1_1" name="q1" value="q1_1" class="option-input">
+                <label for="q1_1" class="option-label">NOT AT ALL</label>
+
+                <input type="radio" id="q1_2" name="q1" value="q1_2" class="option-input">
+                <label for="q1_2" class="option-label">SEVERAL DAYS</label>
+
+                <input type="radio" id="q1_3" name="q1" value="q1_3" class="option-input">
+                <label for="q1_3" class="option-label">MORE THAN HALF THE DAYS</label>
+
+                <input type="radio" id="q1_4" name="q1" value="q1_4" class="option-input">
+                <label for="q1_4" class="option-label">NEARLY EVERY DAY</label>
+            </div>
+
+            <!-- Repeat the above structure for other questions -->
+
+            <div class="question">
+                9. Thoughts that you would be better off dead, or of hurting yourself
+            </div>
+            <div class="options">
+                <input type="radio" id="q9_1" name="q

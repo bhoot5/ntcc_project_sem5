@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        
+        .description {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #666666;
+            text-align: center;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4285f4;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">About Us</h2>
+        <p class="description">One of the quickest and easiest ways to determine whether you are experiencing symptoms of a mental health condition.</p>
+        <div class="button-container">
+            <a href="page2" class="button">Take a Test</a>
+        </div>
+    </div>
+</body>
+</html>

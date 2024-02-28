@@ -1,0 +1,18 @@
+t=total no of ids, h=question number, z=radio button number
+
+django used for handling data proccessing and backend
+will be used for scaling the software. incase there are more questions 
+
+bootstrap provides template for css like streamlines radio buttons
+
+settings has all the settings of the website and is also used for connecting database, libraries that are installed
+
+views all the processing takes place
+
+tests some calcution tests for application
+
+models for creating database tables
+
+wsgi,apps configue of app that is web2 whereas web1 is server
+
+asgi, init.py for preloading 

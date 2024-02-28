@@ -1,0 +1,147 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'web2/page3.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script>
+      function send(){
+          var h = 0;
+          var t = 0;
+          var temp=document.getElementsByName("1");
+              h=0;
+              for (let j=0;j<2;j++){
+                  if (temp[j].checked==true){
+                      h++;
+                  }
+              }
+              if (h==0){
+                t++;
+                  var message='<span style="color:red;"> Option not selected'
+                      document.getElementById("msg1").innerHTML=message;
+                      
+              }
+              var temp=document.getElementsByName("2");
+              h=0;
+              for (let j=0;j<2;j++){
+                  if (temp[j].checked==true){
+                      h++;
+                  }
+              }
+              if (h==0){
+                t++;
+                  var message='<span style="color:red;"> Option not selected'
+                      document.getElementById("msg2").innerHTML=message;
+              
+              }
+              if (t>0){
+                return false;
+              }
+          
+          return true;
+      }
+      function resetmsg1(){
+          document.getElementById("msg1").innerHTML="";
+      }
+      function resetmsg2(){
+          document.getElementById("msg2").innerHTML="";
+      }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>About You</h2>
+        <form action="{% url 'page2'%}" method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" required="required">
+          </div>
+          <div class="form-group">
+            <label for="name">Have you ever received treatment for a mental health problem?<br></label>
+            <div id="q1">
+              <div class="radio">
+                <input type="radio" id="a1" name="1" value="a1" onclick="resetmsg1()" required="required"/>
+                <label class="btn btn-default" for="a1">YES</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="a2" name="1" value="a2" onclick="resetmsg1()" required="required"/>
+                <label class="btn btn-default" for="a2">NO</label>
+              </div>
+              <div id="msg1"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Do you currently have health insurance?</label>
+            <div id="q1">
+              <div class="radio">
+                <input type="radio" id="b1" name="2" value="b1" onclick="resetmsg2()" required="required"/>
+                <label class="btn btn-default" for="b1">YES</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="b2" name="2" value="b2" onclick="resetmsg2()" required="required"/>
+                <label class="btn btn-default" for="b2">NO</label>
+              </div>
+              <div id="msg2"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="age-range">Age Range:</label>
+            <select id="age-range" name="age-range">
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65+">65+</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="household-income">Household Income:</label>
+            <select id="household-income" name="household-income">
+                <option value="less-than-25k">Less than $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-75k">$50,000 - $75,000</option>
+                <option value="75k-100k">$75,000 - $100,000</option>
+                <option value="over-100k">Over $100,000</option>
+            </select>
+        </div>
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required="required">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required="required">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others" required="required">
+                <label for="others">Others</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="job-description">Job Description:</label>
+            <div class="radio-group">
+                <input type="radio" id="student" name="job-description" value="student" required="required">
+                <label for="student">Student</label>
+                <input type="radio" id="private-sector" name="job-description" value="private-sector" required="required">
+                <label for="private-sector">Private Sector</label>
+                <input type="radio" id="public-sector" name="job-description" value="public-sector" required="required">
+                <label for="public-sector">Public Sector</label>
+                <input type="radio" id="unemployed" name="job-description" value="unemployed" required="required">
+                <label for="unemployed">Unemployed</label>
+            </div>
+        </div>
+        <input type="submit" value="Submit" onclick="return send()" class='btn btn-primary'>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js%22%3E"> </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

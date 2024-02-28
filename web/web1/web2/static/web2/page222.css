@@ -1,0 +1,109 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.checklist {
+  padding-bottom: 20px;
+}
+
+/* Container styles */
+.div {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 19px 34px;
+}
+
+.div-2 {
+  display: flex;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* .div5{
+
+} */
+
+.div-3 {
+  width: 100%;
+  
+  padding: 20px;
+}
+
+/* Question styles */
+.question {
+  width: 700px;
+  margin-bottom: 10px;
+}
+
+/* Radio button styles */
+.div-4 {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.radio {
+  margin-right: 10px;
+}
+
+.radio label {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio input[type="radio"]:checked + label {
+  background-color: #20b8be;
+  color: #fff;
+}
+
+/* Bootstrap CSS */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-default {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-default:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #bbb;
+}
+
+.btn-default:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: 0;
+}
+
+.btn-default:active {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #bbb;
+}

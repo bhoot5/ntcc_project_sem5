@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .div {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 19px;
+        padding-right: 34px;
+        padding-bottom: 19px;
+        padding-left: 34px;
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .div-2 {
+        display: flex;
+        max-width: 534px;
+        height: 112px;
+        width: 534px;
+        background-color: rgba(217, 217, 217, 1);
+        margin-bottom: 20px;
+      }
+      .div-3 {
+        /* display: flex; */
+        /* max-width: 1310px; */
+        /* height: 640px; */
+        width: 1310px;
+        /* margin-top: 35px; */
+        background-color: rgba(217, 217, 217, 1);
+      }
+      .checklist {
+        /* width: 350px; */
+        margin-bottom: 40px;
+      }
+      .question{
+        width:700px;
+      }
+      .div-4 {
+        display: flex;
+        width: 600px;
+        height: 40px;
+        margin-bottom: 10px;
+      }
+      .radio label,
+      .radio input {
+        display: block;
+      }
+      .radio label{
+        font-size: smaller;
+      }
+      .radio input[type="radio"] {
+        border-width: 1px;
+        opacity: 0.011;
+        z-index: 100;
+      }
+      
+      .radio input[type="radio"]:checked + label {
+        background: #20b8be;
+        border-radius: 4px;
+      }
+      
+      .radio label {
+        cursor: pointer;
+        z-index: 90;
+        line-height: 0.8em;
+      }
+    
+    </style>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="div">
+        <div class="div-2">
+            <h2>depression test</h2>
+        </div>
+        <div class="div-2">
+            <h3>questions ------ result</h3>
+        </div>
+        <div class="div-3">
+            <form action="/web2/page3" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken" value="BBjd0y6blR8kzMap3pdTbDfXByzhzC4Q3ooAJvukgvnKiLneO8AKZyOYn42XWKuy">
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            1. Little interest or pleasure in doing things
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a1" name="q1" value="q1_1"/>
+        <label class="btn btn-default" for="a1">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a2" name="q1" value="q1_2"/>
+        <label class="btn btn-default" for="a2">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a3" name="q1" value="q1_3"/>
+        <label class="btn btn-default" for="a3">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a4" name="q1" value="q1_4"/>
+        <label class="btn btn-default" for="a4">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            2. Feeling down, depressed, or hopeless
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a5" name="q2" value="q2_1"/>
+        <label class="btn btn-default" for="a5">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a6" name="q2" value="q2_2"/>
+        <label class="btn btn-default" for="a6">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a7" name="q2" value="q2_3"/>
+        <label class="btn btn-default" for="a7">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a8" name="q2" value="q2_4"/>
+        <label class="btn btn-default" for="a8">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            3. Trouble falling or staying asleep, or sleeping too much
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a9" name="q3" value="q3_1"/>
+        <label class="btn btn-default" for="a9">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a10" name="q3" value="q3_2"/>
+        <label class="btn btn-default" for="a10">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a11" name="q3" value="q3_3"/>
+        <label class="btn btn-default" for="a11">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a12" name="q3" value="q3_4"/>
+        <label class="btn btn-default" for="a12">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            4. Feeling tired or having little energy
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a13" name="q4" value="q4_1"/>
+        <label class="btn btn-default" for="a13">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a14" name="q4" value="q4_2"/>
+        <label class="btn btn-default" for="a14">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a15" name="q4" value="q4_3"/>
+        <label class="btn btn-default" for="a15">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a16" name="q4" value="q4_4"/>
+        <label class="btn btn-default" for="a16">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            5. Poor appetite or overeating
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a17" name="q5" value="q5_1"/>
+        <label class="btn btn-default" for="a17">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a18" name="q5" value="q5_2"/>
+        <label class="btn btn-default" for="a18">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a19" name="q5" value="q5_3"/>
+        <label class="btn btn-default" for="a19">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a20" name="q5" value="q5_4"/>
+        <label class="btn btn-default" for="a20">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a21" name="q6" value="q6_1"/>
+        <label class="btn btn-default" for="a21">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a22" name="q6" value="q6_2"/>
+        <label class="btn btn-default" for="a22">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a23" name="q6" value="q6_3"/>
+        <label class="btn btn-default" for="a23">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a24" name="q6" value="q6_4"/>
+        <label class="btn btn-default" for="a24">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            7. Trouble concentrating on things, such as reading the newspaper or watching television
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a25" name="q7" value="q7_1"/>
+        <label class="btn btn-default" for="a25">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a26" name="q7" value="q7_2"/>
+        <label class="btn btn-default" for="a26">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a27" name="q7" value="q7_3"/>
+        <label class="btn btn-default" for="a27">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a28" name="q7" value="q7_4"/>
+        <label class="btn btn-default" for="a28">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            8. Moving or speaking so slowly that other people could have noticed Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a29" name="q8" value="q8_1"/>
+        <label class="btn btn-default" for="a29">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a30" name="q8" value="q8_2"/>
+        <label class="btn btn-default" for="a30">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a31" name="q8" value="q8_3"/>
+        <label class="btn btn-default" for="a31">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a32" name="q8" value="q8_4"/>
+        <label class="btn btn-default" for="a32">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                            9. Thoughts that you would be better off dead, or of hurting yourself
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a33" name="q9" value="q9_1"/>
+        <label class="btn btn-default" for="a33">NOT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a34" name="q9" value="q9_2"/>
+        <label class="btn btn-default" for="a34">SEVERAL DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a35" name="q9" value="q9_3"/>
+        <label class="btn btn-default" for="a35">MORE THAN HALF THE DAYS</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a36" name="q9" value="q9_4"/>
+        <label class="btn btn-default" for="a36">NEARLY EVERY DAY</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                 
+                    <div class="checklist">
+                        <div class="question">
+                             10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?
+                        </div>
+                        <div class="div-4">
+                             
+                                <div class="radio">
+        <input type="radio" id="a37" name="q10" value="q10_1"/>
+        <label class="btn btn-default" for="a37">NOT DIFFICULT AT ALL</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a38" name="q10" value="q10_2"/>
+        <label class="btn btn-default" for="a38">SOMEWHAT DIFFICULT</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a39" name="q10" value="q10_3"/>
+        <label class="btn btn-default" for="a39">VERY DIFFICULT</label>
+    </div> 
+                             
+                                <div class="radio">
+        <input type="radio" id="a40" name="q10" value="q10_4"/>
+        <label class="btn btn-default" for="a40">EXTREMELY DIFFICULT</label>
+    </div> 
+                             
+                        </div>
+                    </div>
+                
+                <input type="submit" value="Submit" class='btn btn-primary'>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js%22%3E"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+</body>
+</html>

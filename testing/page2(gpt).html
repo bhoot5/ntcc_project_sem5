@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .header {
+            background-color: #d9d9d9;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333333;
+            margin: 0;
+        }
+
+        .content {
+            background-color: #d9d9d9;
+            padding: 20px;
+        }
+
+        .question {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .radio-input {
+            margin-right: 10px;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4285f4;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="title">Depression Test</h2>
+        </div>
+        <div class="content">
+            <form action="{% url 'page3' %}" method="post">
+                {% csrf_token %}
+                {% for key, value in questions.items %} 
+                    <div class="question">
+                        <p>{{ key }}</p>
+                    </div>
+                    <div class="options">
+                        {% for option in value %}
+                            <div class="option">
+                                <input type="radio" name="{{ key }}" id="{{ option }}" class="radio-input">
+                                <label for="{{ option }}">{{ option }}</label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

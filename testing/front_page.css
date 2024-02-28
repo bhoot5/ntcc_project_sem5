@@ -1,0 +1,76 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+    padding-right: 22px;
+    padding-bottom: 24px;
+    padding-left: 22px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-2 {
+    display: flex;
+    /* color: black; */
+    /* max-width: 1387px; */
+    height: 131px;
+    width: 1200px;
+    background-color: rgba(23, 23, 189, 0.656);
+    justify-content: center;
+    gap: 50px;
+  }
+  .div-3 {
+    display: flex;
+    color: black;
+    /* max-width: 1387px; */
+    height: 200px;
+    width: 1200px;
+    margin-top: 80px;
+    background-color: rgba(217, 217, 217, 1);
+  }
+  .div-4 {
+    display: flex;
+    /* max-width: 528px; */
+    height: 122px;
+    width: 150px;
+    margin-top: 80px;
+    background-color: rgba(217, 217, 217, 1);
+    
+  }
+  .div-5 {
+    /* max-width: 83px; */
+    margin-top: 80px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .div-6 {
+    /* max-width: 100px; */
+    margin-top: 80px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .one-of-the-quickest-and-easies {
+    /* max-width: 1247px; */
+    margin-top: 80px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+  .div-7 {
+    /* max-width: 176px; */
+    margin-top: 80px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }

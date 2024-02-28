@@ -1,0 +1,64 @@
+.div {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 19px;
+  padding-right: 34px;
+  padding-bottom: 19px;
+  padding-left: 34px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.div-2 {
+  display: flex;
+  max-width: 534px;
+  height: 112px;
+  width: 534px;
+  background-color: rgba(217, 217, 217, 1);
+  margin-bottom: 20px;
+}
+.div-3 {
+  /* display: flex; */
+  /* max-width: 1310px; */
+  /* height: 640px; */
+  width: 1310px;
+  /* margin-top: 35px; */
+  background-color: rgba(217, 217, 217, 1);
+}
+.checklist {
+  /* width: 350px; */
+  margin-bottom: 40px;
+}
+.question{
+  width:700px;
+}
+.div-4 {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.radio label,
+.radio input {
+  display: block;
+}
+.radio label{
+  font-size: smaller;
+}
+.radio input[type="radio"] {
+  border-width: 1px;
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.radio input[type="radio"]:checked + label {
+  background: #20b8be;
+  border-radius: 4px;
+}
+
+.radio label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 0.8em;
+}
